@@ -1,0 +1,122 @@
+/** 
+ * Treehouse FSJS Techdegree
+ * Random Quote Generator - CSS
+ */
+h1 {
+  font-family: 'Cinzel', serif;
+  color: #a38300;
+}
+
+h2 {
+  margin-left: 65em;
+  top: 3em;
+}
+  
+body {
+  background-color: #312706;
+  color: #a38300;
+  font-family: 'Cinzel', serif;
+}
+
+#quote-box {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  line-height: 1;
+}
+
+.quote {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  position: relative;
+  margin: 0;
+}
+
+.quote:before, .quote:after {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  position: relative;
+}
+
+.quote:before {
+  content: "“";
+  top: .15em;
+  left: -.1em;
+}
+
+.quote:after {
+  content: "”";
+  bottom: .1em;
+  margin-left: .1em;
+  position: absolute;
+}
+
+.source {
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 0.5em;
+}
+
+.source:before {
+  content: "—";
+}
+
+.citation {
+  font-style: italic;
+}
+
+.citation:before {
+  content: ", ";
+  font-style: normal;
+}
+
+.year:before {
+  content: ", ";
+  font-style: normal;
+}
+
+.tags:before {
+  content: " ";
+  font-size: 2rem;
+}
+
+#loadQuote {
+  position: absolute;
+  width: 12%;
+  display: inline-block;
+  left: 50%;
+  margin-left: -6em;
+  bottom: 22px;
+  border-radius: 4px;
+  border: 1px solid #a38300;
+  color: #b89403;
+  background-color: Transparent;
+  padding: 15px 0;
+  transition: .5s ;
+  cursor: pointer;
+}
+#loadQuote:hover {
+  color: #c5c1c1cc;
+  background-color: #a38300;
+}
+
+#loadQuote:focus {
+  outline: none;
+}
+
+@media (min-width: 420px) {
+  .quote {
+    font-size: 4rem;
+  }
+  .quote:before, .quote:after {
+    font-size: 6rem;
+  }
+  .source {
+    font-size: 1.25rem;
+  }
+}
