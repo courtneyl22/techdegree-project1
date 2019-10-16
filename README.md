@@ -1,6 +1,11 @@
 # techdegree-project1
 This project is a random quote generator that generates quotes from Black women. This project contains the following requirements: 
 
+Technologies Used:
+- JavaScript
+- HTML
+- CSS
+
 Create Array of Objects
 - Array of objects is named quotes.
 - Array contains at least 5 quote objects.
